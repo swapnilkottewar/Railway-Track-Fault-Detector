@@ -1,0 +1,139 @@
+/* General Reset and Base Styling */
+.help-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.help-wrapper {
+  padding: 30px 10%;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.help-wrapper .container1 {
+  text-align: center;
+  background: #343a40;
+  color: white;
+  border-radius: 10px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.help-wrapper .container1 h1 {
+  font-size: 2rem;
+  margin: 0;
+  width: 100%;
+}
+
+/* Introduction Text */
+.help-wrapper .container2 {
+  margin: 30px 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Cards */
+.help-wrapper .container3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.help-wrapper .container3-box {
+  flex: 1 1 250px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.help-wrapper .container3-box:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.help-wrapper .container3-box i {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.help-wrapper .container3-box h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.help-wrapper .container3-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Info Message */
+.help-wrapper .container4 {
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: #e9f7ef;
+  color: #2e7d32;
+  padding: 15px 20px;
+  border-left: 5px solid #2e7d32;
+  border-radius: 8px;
+}
+
+/* Tutorial Button Section */
+.help-wrapper .container5 {
+  margin-top: 40px;
+  text-align: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.help-wrapper .container5 p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.help-wrapper .container5 .btn {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.help-wrapper .container5 .btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .help-wrapper .container3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-wrapper {
+    padding: 20px 5%;
+  }
+
+  .help-wrapper .container1 h1 {
+    font-size: 2rem;
+  }
+}
